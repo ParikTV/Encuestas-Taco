@@ -1,0 +1,35 @@
+{
+  "respuestas": {
+    "tipo_pedido": "Comer en el restaurante",
+    "satisfaccion_general": "Muy satisfecho",
+    "aspectos_satisfactorios": [
+      "Sabor de la comida",
+      "Amabilidad del personal",
+      "Rapidez del servicio",
+      "Limpieza del restaurante",
+      "Precisión del pedido"
+    ],
+    "valor_precio": "Muy satisfecho",
+    "reconocer_empleado": "Sí",
+    "nombres_empleados_posibles": [
+      "Justin",
+      "Danissa",
+      "Allison",
+      "Maria",
+      "Carlos"
+    ],
+    "compro_taco_crujiente": "Sí",
+    "taco_lleno": "Sí"
+  },
+  "ai_config": {
+    "api_key": "AIzaSyBX-EKukGsMEENau87Hsix9I_tze6OEHM4",
+    "provider": "gemini"
+  },
+  "delays": {
+    "min": 2,
+    "max": 4
+  },
+  "delay_entre_encuestas_min": 30,
+  "delay_entre_encuestas_max": 60,
+  "headless": false
+}
