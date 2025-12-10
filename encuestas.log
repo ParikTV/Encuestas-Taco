@@ -1,0 +1,441 @@
+2025-11-30 18:31:19,689 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 18:31:19,689 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 18:31:19,689 - INFO - 
+============================================================
+2025-11-30 18:31:19,689 - INFO - === Iniciando encuesta 64301125010101 ===
+2025-11-30 18:31:19,689 - INFO - ============================================================
+
+2025-11-30 18:31:19,689 - INFO - ====== WebDriver manager ======
+2025-11-30 18:31:20,493 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 18:31:21,066 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 18:31:21,576 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 18:31:22,777 - INFO - WebDriver version 142.0.7444.175 selected
+2025-11-30 18:31:22,781 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/win32/chromedriver-win32.zip
+2025-11-30 18:31:22,781 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/142.0.7444.175/win32/chromedriver-win32.zip
+2025-11-30 18:31:23,340 - INFO - Driver downloading response is 200
+2025-11-30 18:31:23,972 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 18:31:24,522 - INFO - Driver has been saved in cache [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175]
+2025-11-30 18:31:26,302 - INFO - Navegador iniciado exitosamente
+2025-11-30 18:31:28,291 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe
+2025-11-30 18:31:31,814 - INFO - Clic en boton 'Continuar' (terminos y condiciones)
+2025-11-30 18:31:37,210 - INFO - Codigo '64301125010101' ingresado
+2025-11-30 18:31:41,218 - INFO - Clic en boton 'Comenzar'
+2025-11-30 18:31:44,927 - INFO - Codigo aceptado, iniciando encuesta...
+2025-11-30 18:31:44,927 - INFO - === PREGUNTA 1: Tipo de Pedido ===
+2025-11-30 18:31:45,770 - INFO - [OK] VERIFICADO - Opcion seleccionada (por texto): Comer en el restaurante
+2025-11-30 18:31:45,793 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:31:49,110 - INFO - Clic en boton 'Siguiente' (Pregunta 1)
+2025-11-30 18:31:51,514 - INFO - === PREGUNTA 2: Satisfaccion General (ESCALA) ===
+2025-11-30 18:31:51,514 - INFO - Usando metodo especializado para escala de satisfaccion: Muy satisfecho
+2025-11-30 18:31:51,521 - INFO - Tablas encontradas: 1
+2025-11-30 18:31:51,577 - INFO - Headers en tabla: ['Muy satisfecho', 'Satisfecho', 'Ni satisfecho ni insatisfecho', 'Insatisfecho', 'Muy insatisfecho', 'Califique por favor su satisfacción en general en esta experiencia en este Taco Bell.']
+2025-11-30 18:31:51,586 - INFO - Columna encontrada en indice 0: Muy satisfecho
+2025-11-30 18:31:51,592 - INFO - Radios en tabla: 5
+2025-11-30 18:31:53,113 - INFO - [OK] VERIFICADO - Radio de tabla seleccionado (columna 0)
+2025-11-30 18:31:53,130 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:31:57,062 - INFO - Clic en boton 'Siguiente' (Pregunta 2)
+2025-11-30 18:32:00,788 - INFO - === PREGUNTA 3: Aspectos Satisfactorios ===
+2025-11-30 18:32:01,435 - INFO - [OK] VERIFICADO - Checkbox marcado: Sabor de la comida
+2025-11-30 18:32:02,092 - INFO - [OK] VERIFICADO - Checkbox marcado: Amabilidad del personal
+2025-11-30 18:32:02,745 - INFO - [OK] VERIFICADO - Checkbox marcado: Rapidez del servicio
+2025-11-30 18:32:03,388 - INFO - [OK] VERIFICADO - Checkbox marcado: Limpieza del restaurante
+2025-11-30 18:32:04,045 - INFO - [OK] VERIFICADO - Checkbox marcado: Precisión del pedido
+2025-11-30 18:32:04,045 - INFO - Total checkboxes marcados y verificados: 5/5
+2025-11-30 18:32:04,062 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:32:07,413 - INFO - Clic en boton 'Siguiente' (Pregunta 3)
+2025-11-30 18:32:10,538 - INFO - === PREGUNTA 4: Valor por Precio (ESCALA) ===
+2025-11-30 18:32:10,538 - INFO - Usando metodo especializado para escala de satisfaccion: Muy satisfecho
+2025-11-30 18:32:10,543 - INFO - Tablas encontradas: 1
+2025-11-30 18:32:10,596 - INFO - Headers en tabla: ['Muy satisfecho', 'Satisfecho', 'Ni satisfecho ni insatisfecho', 'Insatisfecho', 'Muy insatisfecho', 'Califique su satisfacción con el valor total que obtuvo a cambio del precio que pagó.']
+2025-11-30 18:32:10,604 - INFO - Columna encontrada en indice 0: Muy satisfecho
+2025-11-30 18:32:10,609 - INFO - Radios en tabla: 5
+2025-11-30 18:32:12,129 - INFO - [OK] VERIFICADO - Radio de tabla seleccionado (columna 0)
+2025-11-30 18:32:12,146 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:32:14,952 - INFO - Clic en boton 'Siguiente' (Pregunta 4)
+2025-11-30 18:32:18,104 - INFO - === PREGUNTA 5: Comentario sobre satisfaccion (IA) ===
+2025-11-30 18:32:18,108 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 18:32:18,763 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 18:32:18,764 - INFO - 🤖 [IA] Generado: sí estuvo muy rico
+2025-11-30 18:32:18,764 - INFO - 💬 Comentario generado: sí estuvo muy rico
+2025-11-30 18:32:21,556 - INFO - [OK] VERIFICADO - Texto ingresado correctamente (18 caracteres)
+2025-11-30 18:32:21,556 - INFO - Texto ingresado: sí estuvo muy rico...
+2025-11-30 18:32:21,572 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:32:24,453 - INFO - Clic en boton 'Siguiente' (Pregunta 5)
+2025-11-30 18:32:27,443 - INFO - === PREGUNTA 6: Desearía expresar reconocimiento? ===
+2025-11-30 18:32:28,270 - INFO - [OK] VERIFICADO - Radio button #1 seleccionado
+2025-11-30 18:32:28,286 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:32:32,267 - INFO - Clic en boton 'Siguiente' (Pregunta 6)
+2025-11-30 18:32:36,133 - INFO - === PREGUNTA 7: Informacion del empleado (IA) ===
+2025-11-30 18:32:38,133 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 18:32:38,671 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 18:32:38,673 - INFO - 🤖 [IA] Generado: allison es atenta
+2025-11-30 18:32:38,673 - INFO - 💬 Comentario empleado: allison es atenta
+2025-11-30 18:32:38,684 - INFO - Total inputs en pagina: 6
+2025-11-30 18:32:38,685 - INFO - Total textareas en pagina: 1
+2025-11-30 18:32:38,695 - INFO - Campo texto encontrado: type=text
+2025-11-30 18:32:38,716 - INFO - Textarea encontrado y visible
+2025-11-30 18:32:38,716 - INFO - Campos editables encontrados: 2
+2025-11-30 18:32:40,287 - INFO - [OK] VERIFICADO - Texto ingresado correctamente (7 caracteres)
+2025-11-30 18:32:40,287 - INFO - [OK] VERIFICADO - Nombre empleado: Allison
+2025-11-30 18:32:43,657 - INFO - [OK] VERIFICADO - Texto ingresado correctamente (17 caracteres)
+2025-11-30 18:32:43,658 - INFO - [OK] VERIFICADO - Comentario IA empleado ingresado
+2025-11-30 18:32:43,674 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:32:46,467 - INFO - Clic en boton 'Siguiente' (Pregunta 7)
+2025-11-30 18:32:48,535 - INFO - === PREGUNTA 8: Compro taco crujiente? ===
+2025-11-30 18:32:49,369 - INFO - [OK] VERIFICADO - Opcion seleccionada (por texto): Sí
+2025-11-30 18:32:49,387 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:32:52,656 - INFO - Clic en boton 'Siguiente' (Pregunta 8)
+2025-11-30 18:32:54,725 - INFO - === PREGUNTA 9: Taco se veia lleno? ===
+2025-11-30 18:32:57,556 - INFO - [OK] VERIFICADO - Opcion seleccionada (por texto): Sí
+2025-11-30 18:32:57,572 - INFO - [OK] Pagina verificada - Respuesta detectada
+2025-11-30 18:33:01,025 - INFO - Clic en boton 'Siguiente' (Pregunta 9)
+2025-11-30 18:33:06,378 - INFO - 
+============================================================
+2025-11-30 18:33:06,378 - INFO - ENCUESTA COMPLETADA!
+2025-11-30 18:33:06,378 - INFO - ============================================================
+
+2025-11-30 18:33:06,379 - INFO - 
+📊 Estadísticas IA: IA: 2 (100.0%) | Respaldos: 0
+
+2025-11-30 18:33:06,448 - INFO - Captura de pantalla: screenshot_exito_final_20251130_183306.png
+2025-11-30 18:33:11,571 - INFO - Navegador cerrado
+
+2025-11-30 18:33:22,078 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 18:33:22,078 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 18:33:22,079 - INFO - 
+============================================================
+2025-11-30 18:33:22,079 - INFO - === Iniciando encuesta 64301125010102 ===
+2025-11-30 18:33:22,080 - INFO - ============================================================
+
+2025-11-30 18:33:22,080 - INFO - ====== WebDriver manager ======
+2025-11-30 18:33:22,728 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 18:33:23,238 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 18:33:23,677 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 18:33:24,753 - INFO - Navegador iniciado exitosamente
+2025-11-30 18:33:26,521 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe
+2025-11-30 18:33:29,814 - INFO - Clic en boton 'Continuar' (terminos y condiciones)
+2025-11-30 18:33:34,728 - INFO - Codigo '64301125010102' ingresado
+2025-11-30 18:33:38,090 - INFO - Clic en boton 'Comenzar'
+2025-11-30 19:06:16,478 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:06:16,478 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:06:16,478 - INFO - ====== WebDriver manager ======
+2025-11-30 19:06:17,229 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:06:17,756 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:06:18,205 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:06:19,257 - INFO - Navegador iniciado exitosamente
+2025-11-30 19:06:20,927 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe
+2025-11-30 19:12:37,620 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:12:37,620 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:12:37,621 - INFO - ====== WebDriver manager ======
+2025-11-30 19:12:38,353 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:12:38,836 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:12:51,373 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:12:51,373 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:12:51,373 - INFO - ====== WebDriver manager ======
+2025-11-30 19:12:52,098 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:12:52,662 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:15:04,801 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:15:04,801 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:15:04,801 - INFO - ====== WebDriver manager ======
+2025-11-30 19:15:05,472 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:15:05,921 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:15:06,407 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:15:08,136 - INFO - Navegador abierto en Google. Esperando activación de VPN...
+2025-11-30 19:15:59,264 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe
+2025-11-30 19:16:02,003 - ERROR - Error al ingresar codigo: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=142.0.7444.176)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x944103
+	0x944144
+	0x74e71d
+	0x72c32d
+	0x7c329e
+	0x7de749
+	0x7bc706
+	0x78da30
+	0x78ed54
+	0xbb57b4
+	0xbb098a
+	0x96c392
+	0x95c4c8
+	0x96324d
+	0x94c478
+	0x94c63c
+	0x9367ca
+	0x761c5d49
+	0x773fd6db
+	0x773fd661
+
+2025-11-30 19:17:08,968 - INFO - Navegador cerrado manualmente
+2025-11-30 19:17:10,415 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:17:10,416 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:17:10,416 - INFO - ====== WebDriver manager ======
+2025-11-30 19:17:11,128 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:17:11,591 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:17:12,146 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:17:13,944 - INFO - Navegador abierto en Google. Esperando activación de VPN...
+2025-11-30 19:21:38,995 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:21:38,995 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:21:38,995 - INFO - ====== WebDriver manager ======
+2025-11-30 19:21:39,703 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:21:40,755 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:21:41,648 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:21:45,246 - INFO - Navegador abierto en Google. Esperando activación de VPN...
+2025-11-30 19:21:46,253 - INFO - ✅ Conexión con navegador verificada.
+2025-11-30 19:21:48,254 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe ...
+2025-11-30 19:21:58,920 - INFO - Clic en boton 'Continuar' inicial
+2025-11-30 19:22:01,167 - INFO - Buscando campo de código...
+2025-11-30 19:22:02,977 - INFO - Codigo '64301125010102' ingresado
+2025-11-30 19:22:07,668 - INFO - Clic en boton 'Comenzar'
+2025-11-30 19:22:10,675 - INFO - Página siguiente cargada.
+2025-11-30 19:22:14,390 - INFO - Siguiente página (P1)
+2025-11-30 19:22:18,487 - INFO - Siguiente página (P2)
+2025-11-30 19:22:22,378 - INFO - Siguiente página (P3)
+2025-11-30 19:22:26,414 - INFO - Siguiente página (P4)
+2025-11-30 19:22:26,417 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:22:28,452 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:22:28,453 - INFO - 🤖 [IA] Generado: estuvo todo muy rico
+2025-11-30 19:22:31,169 - INFO - Siguiente página (P5)
+2025-11-30 19:22:35,854 - INFO - Siguiente página (P6)
+2025-11-30 19:22:36,855 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:22:38,632 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:22:38,633 - INFO - 🤖 [IA] Generado: allison fue amable conmigo
+2025-11-30 19:22:42,730 - INFO - Siguiente página (P7)
+2025-11-30 19:22:47,161 - INFO - Siguiente página (P8)
+2025-11-30 19:22:52,351 - INFO - Siguiente página (P9)
+2025-11-30 19:22:52,351 - INFO - ENCUESTA COMPLETADA!
+2025-11-30 19:23:01,885 - INFO - Navegador cerrado manualmente
+2025-11-30 19:23:16,020 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:23:16,021 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:23:16,021 - INFO - ====== WebDriver manager ======
+2025-11-30 19:23:16,686 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:23:18,208 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:23:19,440 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:23:25,837 - INFO - Navegador abierto en Google. Esperando activación de VPN...
+2025-11-30 19:23:27,858 - INFO - ✅ Conexión con navegador verificada.
+2025-11-30 19:23:29,858 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe ...
+2025-11-30 19:23:43,568 - INFO - Clic en boton 'Continuar' inicial
+2025-11-30 19:23:45,578 - INFO - Buscando campo de código...
+2025-11-30 19:23:47,350 - INFO - Codigo '64301125010103' ingresado
+2025-11-30 19:23:49,959 - INFO - Clic en boton 'Comenzar'
+2025-11-30 19:23:52,966 - INFO - Página siguiente cargada.
+2025-11-30 19:23:57,949 - INFO - Siguiente página (P1)
+2025-11-30 19:24:02,919 - INFO - Siguiente página (P2)
+2025-11-30 19:24:08,084 - INFO - Siguiente página (P3)
+2025-11-30 19:24:13,705 - INFO - Siguiente página (P4)
+2025-11-30 19:24:13,705 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:24:15,955 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:24:15,957 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:24:17,147 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:24:17,148 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:24:18,236 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:24:18,239 - INFO - 🤖 [IA] Generado: sí estuvo muy rico
+2025-11-30 19:24:22,506 - INFO - Siguiente página (P5)
+2025-11-30 19:24:26,262 - INFO - Siguiente página (P6)
+2025-11-30 19:24:27,262 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:24:29,098 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:24:29,099 - INFO - 🤖 [IA] Generado: allison fue amable conmigo
+2025-11-30 19:24:32,919 - INFO - Siguiente página (P7)
+2025-11-30 19:24:37,800 - INFO - Siguiente página (P8)
+2025-11-30 19:24:42,654 - INFO - Siguiente página (P9)
+2025-11-30 19:24:42,655 - INFO - ENCUESTA COMPLETADA!
+2025-11-30 19:24:49,538 - INFO - Navegador cerrado manualmente
+2025-11-30 19:24:51,716 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:24:51,716 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:24:51,716 - INFO - ====== WebDriver manager ======
+2025-11-30 19:24:52,361 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:24:53,515 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:24:54,677 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:25:00,363 - INFO - Navegador abierto en Google. Esperando activación de VPN...
+2025-11-30 19:25:13,064 - INFO - ✅ Conexión con navegador verificada.
+2025-11-30 19:25:15,065 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe ...
+2025-11-30 19:25:24,869 - INFO - Clic en boton 'Continuar' inicial
+2025-11-30 19:25:27,878 - INFO - Buscando campo de código...
+2025-11-30 19:25:29,574 - INFO - Codigo '64301125010104' ingresado
+2025-11-30 19:25:33,094 - INFO - Clic en boton 'Comenzar'
+2025-11-30 19:25:36,101 - INFO - Página siguiente cargada.
+2025-11-30 19:25:39,263 - INFO - Siguiente página (P1)
+2025-11-30 19:25:43,576 - INFO - Siguiente página (P2)
+2025-11-30 19:25:47,814 - INFO - Siguiente página (P3)
+2025-11-30 19:25:52,183 - INFO - Siguiente página (P4)
+2025-11-30 19:25:52,184 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:25:53,500 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:25:53,501 - INFO - 🤖 [IA] Generado: ¡todo en orden! 👍
+2025-11-30 19:25:57,872 - INFO - Siguiente página (P5)
+2025-11-30 19:26:01,498 - INFO - Siguiente página (P6)
+2025-11-30 19:26:02,498 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:26:03,608 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:26:03,609 - INFO - 🤖 [IA] Generado: maría es muy atenta
+2025-11-30 19:26:08,179 - INFO - Siguiente página (P7)
+2025-11-30 19:26:12,204 - INFO - Siguiente página (P8)
+2025-11-30 19:26:18,037 - INFO - Siguiente página (P9)
+2025-11-30 19:26:18,037 - INFO - ENCUESTA COMPLETADA!
+2025-11-30 19:26:30,449 - INFO - Navegador cerrado manualmente
+2025-11-30 19:26:43,473 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:26:43,474 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:26:43,474 - INFO - ====== WebDriver manager ======
+2025-11-30 19:26:44,185 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:26:46,803 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:26:50,264 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:27:11,869 - INFO - Navegador abierto en Google. Esperando activación de VPN...
+2025-11-30 19:27:14,595 - INFO - ✅ Conexión con navegador verificada.
+2025-11-30 19:27:16,596 - INFO - Navegando a https://www.clientemania.com/Index.aspx?l=es-CR&c=tacobell&s=UGwE9AKe ...
+2025-11-30 19:27:39,245 - INFO - Clic en boton 'Continuar' inicial
+2025-11-30 19:27:41,253 - INFO - Buscando campo de código...
+2025-11-30 19:27:45,489 - INFO - Codigo '64301125010105' ingresado
+2025-11-30 19:27:54,101 - INFO - Clic en boton 'Comenzar'
+2025-11-30 19:27:57,108 - INFO - Página siguiente cargada.
+2025-11-30 19:28:01,044 - INFO - Siguiente página (P1)
+2025-11-30 19:28:05,863 - INFO - Siguiente página (P2)
+2025-11-30 19:28:10,204 - INFO - Siguiente página (P3)
+2025-11-30 19:28:14,108 - INFO - Siguiente página (P4)
+2025-11-30 19:28:14,108 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:28:15,227 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 19:28:15,228 - WARNING - ⚠ Fallo IA intento 1: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-11-30 19:28:15,728 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:28:16,075 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 19:28:16,076 - WARNING - ⚠ Fallo IA intento 2: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-11-30 19:28:16,577 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:28:16,893 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 19:28:16,893 - WARNING - ⚠ Fallo IA intento 3: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-11-30 19:28:21,002 - INFO - Siguiente página (P5)
+2025-11-30 19:28:25,152 - INFO - Siguiente página (P6)
+2025-11-30 19:28:26,153 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:28:26,915 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 19:28:26,915 - WARNING - ⚠ Fallo IA empleado intento 1: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-11-30 19:28:27,416 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:28:27,772 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 19:28:27,773 - WARNING - ⚠ Fallo IA empleado intento 2: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-11-30 19:28:28,273 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:28:28,596 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 400 Bad Request"
+2025-11-30 19:28:28,596 - WARNING - ⚠ Fallo IA empleado intento 3: 400 FAILED_PRECONDITION. {'error': {'code': 400, 'message': 'User location is not supported for the API use.', 'status': 'FAILED_PRECONDITION'}}
+2025-11-30 19:28:33,702 - INFO - Siguiente página (P7)
+2025-11-30 19:28:38,946 - INFO - Siguiente página (P8)
+2025-11-30 19:28:44,741 - INFO - Siguiente página (P9)
+2025-11-30 19:28:44,741 - INFO - ENCUESTA COMPLETADA!
+2025-11-30 19:29:00,043 - INFO - Navegador cerrado manualmente
+2025-11-30 19:30:10,934 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:30:10,935 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:30:10,935 - INFO - ====== WebDriver manager ======
+2025-11-30 19:30:14,381 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:30:50,027 - ERROR - Error al iniciar navegador: Could not reach host. Are you offline?
+2025-11-30 19:30:52,940 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:30:52,940 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:30:52,940 - INFO - ====== WebDriver manager ======
+2025-11-30 19:30:53,676 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:30:54,251 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:30:54,766 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:30:56,590 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:31:25,905 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:31:26,679 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:31:26,680 - INFO - 🤖 [IA] Generado: lugar limpio y rico
+2025-11-30 19:31:32,850 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:31:33,496 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:31:33,497 - INFO - 🤖 [IA] Generado: allison explicó bien el menú
+2025-11-30 19:31:43,540 - INFO - ⚡ ENCUESTA COMPLETADA (TURBO)
+2025-11-30 19:32:02,981 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:32:02,982 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:32:02,982 - INFO - ====== WebDriver manager ======
+2025-11-30 19:32:03,629 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:32:04,188 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:32:04,646 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:32:06,415 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:33:04,546 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:33:06,019 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:33:06,020 - INFO - 🤖 [IA] Generado: me sirvieron rápido y la comida estuvo buena
+2025-11-30 19:33:12,553 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:33:13,871 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:33:13,872 - INFO - 🤖 [IA] Generado: gracias danissa por la ayuda con mi orden
+2025-11-30 19:33:26,772 - INFO - ⚡ ENCUESTA COMPLETADA (TURBO)
+2025-11-30 19:33:56,997 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:33:56,997 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:33:56,997 - INFO - ====== WebDriver manager ======
+2025-11-30 19:33:57,805 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:33:58,349 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:33:58,814 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:34:00,756 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:34:22,934 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:34:23,557 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:34:23,558 - INFO - 🤖 [IA] Generado: la comida estuvo caliente
+2025-11-30 19:34:29,922 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:34:30,452 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:34:30,453 - INFO - 🤖 [IA] Generado: justin siempre sonríe
+2025-11-30 19:39:09,500 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:39:09,500 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:39:09,500 - INFO - ====== WebDriver manager ======
+2025-11-30 19:39:10,182 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:39:10,187 - ERROR - Error al iniciar navegador: Could not reach host. Are you offline?
+2025-11-30 19:39:25,489 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:39:25,489 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:39:25,490 - INFO - ====== WebDriver manager ======
+2025-11-30 19:39:26,130 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:39:28,325 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:39:29,268 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:39:37,844 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:39:40,153 - INFO - Conectando con el sitio...
+2025-11-30 19:41:03,099 - ERROR - Error navegación: ('Connection aborted.', ConnectionResetError(10054, 'Se ha forzado la interrupción de una conexión existente por el host remoto', None, 10054, None))
+2025-11-30 19:41:28,918 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:41:28,918 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:41:28,918 - INFO - ====== WebDriver manager ======
+2025-11-30 19:41:29,587 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:41:32,481 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:41:40,873 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:41:56,488 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:42:38,360 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:42:45,677 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:42:45,678 - INFO - 🤖 [IA] Generado: lugar limpio y rico
+2025-11-30 19:42:54,003 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:42:56,524 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:42:56,524 - INFO - 🤖 [IA] Generado: allison sonríe siempre
+2025-11-30 19:43:08,664 - INFO - ⚡ ENCUESTA COMPLETADA (TURBO)
+2025-11-30 19:43:36,466 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:43:36,466 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:43:36,467 - INFO - ====== WebDriver manager ======
+2025-11-30 19:43:37,118 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:43:41,217 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:43:45,515 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:43:52,226 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:44:30,638 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:44:32,745 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:44:32,746 - INFO - 🤖 [IA] Generado: lugar limpio y comida rica
+2025-11-30 19:44:54,641 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:44:54,641 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:44:54,642 - INFO - ====== WebDriver manager ======
+2025-11-30 19:44:55,309 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:45:00,199 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:45:02,420 - ERROR - Error al iniciar navegador: Could not reach host. Are you offline?
+2025-11-30 19:45:28,927 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:45:28,927 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:45:28,927 - INFO - ====== WebDriver manager ======
+2025-11-30 19:45:29,566 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:45:31,479 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:45:32,900 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:45:39,472 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:46:16,293 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:46:18,364 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:46:18,365 - INFO - 🤖 [IA] Generado: ¡me encantó la experiencia!
+2025-11-30 19:46:25,824 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:46:27,521 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:46:27,522 - INFO - 🤖 [IA] Generado: justin fue amable conmigo
+2025-11-30 19:46:38,632 - INFO - ⚡ ENCUESTA COMPLETADA (TURBO)
+2025-11-30 19:46:52,986 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:46:52,986 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:46:52,986 - INFO - ====== WebDriver manager ======
+2025-11-30 19:46:53,659 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:46:53,660 - ERROR - Error al iniciar navegador: Could not reach host. Are you offline?
+2025-11-30 19:46:58,464 - INFO - ✓ IA DE GOOGLE GEMINI LISTA
+2025-11-30 19:46:58,464 - INFO - 🤖 Generador de IA inicializado
+2025-11-30 19:46:58,464 - INFO - ====== WebDriver manager ======
+2025-11-30 19:46:59,124 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:47:00,189 - INFO - Get LATEST chromedriver version for google-chrome
+2025-11-30 19:47:01,061 - INFO - Driver [C:\Users\justi\.wdm\drivers\chromedriver\win64\142.0.7444.175\chromedriver-win32/chromedriver.exe] found in cache
+2025-11-30 19:47:04,434 - INFO - Navegador listo. Esperando VPN...
+2025-11-30 19:47:38,674 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:47:39,977 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:47:39,978 - INFO - 🤖 [IA] Generado: la comida estuvo caliente
+2025-11-30 19:47:48,382 - INFO - AFC is enabled with max remote calls: 10.
+2025-11-30 19:47:49,530 - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-lite-001:generateContent "HTTP/1.1 200 OK"
+2025-11-30 19:47:49,531 - INFO - 🤖 [IA] Generado: ¡gracias justin por la ayuda!
+2025-11-30 19:48:02,809 - INFO - ⚡ ENCUESTA COMPLETADA (TURBO)

@@ -10,277 +10,177 @@ class GeneradorRespuestasIA:
         self.usar_ia = False
         self.empleados = config['respuestas'].get('nombres_empleados_posibles', ["Justin", "Danissa", "Allison"])
         
-        # Configurar IA con tu clave
+        # Configurar IA
         api_key = config.get('ai_config', {}).get('api_key')
         
         if api_key and api_key != 'TU_API_KEY_AQUI':
             try:
-                # Establecer API key como variable de entorno (requerido por nuevo SDK)
+                # Establecer variable de entorno
                 os.environ['GEMINI_API_KEY'] = api_key
-                
-                # Crear cliente con nueva API
                 self.client = genai.Client(api_key=api_key)
-                
                 self.usar_ia = True
-                logging.info("✓ IA DE GOOGLE GEMINI FLASH-LITE ACTIVADA CORRECTAMENTE")
-                logging.info("✓ Modo: Generación de comentarios únicos y variados")
+                logging.info("✓ IA DE GOOGLE GEMINI LISTA")
             except Exception as e:
                 logging.error(f"✗ Error configurando IA: {e}")
                 self.usar_ia = False
         else:
-            logging.warning("⚠ No se encontró API Key, usando modo de respaldo")
+            logging.warning("⚠ No se encontró API Key válida")
 
-        # RESPALDOS mejorados (Por si falla la IA)
+        # RESPALDOS (Por si falla la IA)
         self.respaldos_satisfaccion = [
-            "todo muy rico la verdad",
-            "me gustó mucho todo bien",
-            "excelente comida muy fresca",
-            "todo perfecto muy satisfecho",
-            "servicio rápido y comida buena",
-            "todo limpio y muy rico",
-            "la comida llegó caliente todo bien",
-            "muy buena atención y comida",
-            "todo correcto muy contento",
-            "experiencia muy buena volveré",
-            "comida deliciosa todo excelente",
-            "servicio impecable muy bien todo",
-            "muy buena experiencia todo limpio",
-            "todo perfecto desde que llegué",
-            "comida fresca servicio rápido todo bien"
+            "todo bien gracias",
+            "comida rica y rapida",
+            "me gusto todo bien",
+            "buen servicio rapido",
+            "tacos ricos todo bien",
+            "todo limpio y rico",
+            "atencion rapida gracias",
+            "muy rico todo",
+            "buena comida",
+            "servicio rapido todo bien"
         ]
         
         self.respaldos_empleado = [
-            "muy amable y atento gracias",
-            "excelente actitud muy profesional",
-            "me atendió muy bien gracias",
-            "gran servicio muy paciente",
-            "súper amable muy buena atención",
-            "muy atento a todo gracias",
-            "servicio de calidad muy rápido",
-            "me ayudó mucho muy servicial",
-            "actitud positiva servicio impecable",
-            "muy profesional y simpático",
-            "gran atención muy recomendado",
-            "hizo todo bien muchas gracias",
-            "muy eficiente buena actitud",
-            "servicio excepcional muy bien",
-            "muy amable de verdad gracias"
+            "muy amable gracias",
+            "buen servicio rapido",
+            "me atendio super bien",
+            "muy servicial gracias",
+            "atento y rapido",
+            "me ayudo con el pedido",
+            "muy buena gente",
+            "rapido y amable",
+            "todo excelente gracias",
+            "buena atencion"
         ]
         
-        # Variables para tracking de uso
         self.total_generados_ia = 0
         self.total_respaldos = 0
-        self.cache_recientes = []  # Para evitar repeticiones
+        self.cache_recientes = [] 
 
     def obtener_empleado_aleatorio(self):
-        """Devuelve uno de los nombres configurados al azar"""
-        seleccionado = random.choice(self.empleados)
-        logging.info(f"👤 Empleado seleccionado: {seleccionado}")
-        return seleccionado
+        return random.choice(self.empleados)
 
     def generar_comentario_satisfaccion(self, intentos_max=3):
-        """
-        Genera comentario general con IA
-        Usa múltiples estilos y contextos para máxima variación
-        """
+        """Genera comentario general: PASADO, CORTO, REALISTA."""
         if self.usar_ia:
             for intento in range(intentos_max):
                 try:
-                    # Seleccionar prompt aleatorio para mayor variación
+                    # PROMPTS MEJORADOS: Enfocados en "YA COMÍ" (Pasado)
                     prompts = [
-                        "Cliente de restaurante comenta sobre su comida. 8-12 palabras casual. Sin puntos. Ejemplo: los tacos estaban muy buenos todo fresco",
-                        "Persona habla de lo que comió. 7-10 palabras simple. Sin puntuación. Ejemplo: me gustó la comida estaba rica",
-                        "Comentario rápido sobre la experiencia comiendo. 8-11 palabras. Sin signos. Ejemplo: todo muy rico el servicio rápido",
-                        "Cliente satisfecho con su pedido de comida. 7-10 palabras. Sin puntos ni comas. Ejemplo: la comida llegó caliente todo bien",
-                        "Opinión sobre la comida que ordenó. 8-12 palabras casual. Sin puntuación. Ejemplo: pedí tacos estaban deliciosos muy buena experiencia",
-                        "Comentario sobre cómo estuvo todo en el restaurante. 7-11 palabras. Sin signos. Ejemplo: comida rica lugar limpio todo perfecto",
-                        "Cliente habla de su visita al lugar. 8-10 palabras simple. Sin puntos. Ejemplo: todo bien la comida fresca y rica",
-                        "Opinión rápida sobre lo que comió. 7-12 palabras. Sin puntuación. Ejemplo: me encantó todo estaba muy bueno",
-                        "Persona satisfecha comenta sobre su comida. 8-11 palabras casual. Sin signos. Ejemplo: muy rica la comida volvería otra vez",
-                        "Cliente feliz con lo que ordenó. 7-10 palabras. Sin puntos. Ejemplo: pedido correcto comida caliente todo excelente"
+                        "Cliente que ya terminó de comer dice que estuvo rico. 4 palabras. Minúsculas. Sin signos. Ejemplo: todo estuvo muy rico",
+                        "Di que el servicio fue rápido y la comida buena. Pasado simple. Muy corto. Ejemplo: me atendieron rapido y bien",
+                        "Comentario breve de que la orden llegó bien. Informal. Ejemplo: me dieron todo lo que pedi",
+                        "Di que la comida estaba caliente. Pasado. Ejemplo: la comida llego caliente",
+                        "Opinión simple: lugar limpio y rico. Minúsculas. Ejemplo: lugar limpio y comida rica",
+                        "Cliente satisfecho saliendo del restaurante. 5 palabras máximo. Ejemplo: buena comida y buen servicio",
+                        "Di que las papas o tacos estaban buenos. Pasado. Ejemplo: los tacos estaban ricos"
                     ]
                     
                     prompt_seleccionado = random.choice(prompts)
                     
-                    # Llamar a la API Gemini Flash-Lite (sin thinking mode)
                     response = self.client.models.generate_content(
                         model="models/gemini-2.0-flash-lite-001",
                         contents=prompt_seleccionado,
                         config={
-                            "temperature": 1.8,  # Muy alta temperatura para máxima variación
-                            "top_p": 0.98,
-                            "top_k": 64,
-                            "max_output_tokens": 50,  # Reducido para forzar respuestas cortas
+                            "temperature": 0.65,  # Más baja para evitar cosas raras
+                            "top_p": 0.90,
+                            "top_k": 40,
+                            "max_output_tokens": 30, # Muy corto
                         }
                     )
                     
-                    # Extraer texto
-                    texto = None
+                    texto = self._extraer_texto(response)
                     
-                    if hasattr(response, 'text') and response.text:
-                        texto = response.text
-                    elif hasattr(response, 'candidates') and response.candidates:
-                        candidate = response.candidates[0]
-                        if hasattr(candidate, 'content') and candidate.content:
-                            content = candidate.content
-                            if hasattr(content, 'parts') and content.parts:
-                                if hasattr(content.parts[0], 'text'):
-                                    texto = content.parts[0].text
-                    
-                    if not texto:
-                        raise Exception(f"Respuesta vacía (finish_reason: {response.candidates[0].finish_reason if response.candidates else 'unknown'})")
-                    
-                    texto = texto.strip()
-                    
-                    # Limpieza agresiva del texto
-                    texto = texto.replace('"', '').replace("'", "").replace('*', '').replace('`', '')
-                    texto = texto.replace('Reseña:', '').replace('Comentario:', '').replace('Opinión:', '')
-                    texto = texto.replace('**', '').replace('__', '').replace('~~', '')
-                    texto = texto.replace('Ejemplo:', '').replace('ejemplo:', '')
-                    
-                    # REMOVER TODA LA PUNTUACIÓN para que sea más casual
-                    texto = texto.replace('.', '').replace(',', '').replace(';', '').replace(':', '')
-                    texto = texto.replace('!', '').replace('¡', '').replace('?', '').replace('¿', '')
-                    
-                    # Tomar solo la primera línea
-                    if '\n' in texto:
-                        texto = texto.split('\n')[0]
-                    
-                    texto = texto.strip()
-                    
-                    # Verificar que no sea repetido
-                    if texto in self.cache_recientes:
-                        logging.warning(f"⚠ Comentario duplicado detectado, regenerando...")
-                        continue
-                    
-                    # Validar longitud
-                    palabras = len(texto.split())
-                    if 5 <= palabras <= 20:
-                        # Agregar al cache (mantener últimos 20)
-                        self.cache_recientes.append(texto)
-                        if len(self.cache_recientes) > 20:
-                            self.cache_recientes.pop(0)
-                        
-                        self.total_generados_ia += 1
-                        logging.info(f"🤖 [IA] Comentario único generado ({palabras} palabras)")
-                        return texto
-                    else:
-                        logging.warning(f"⚠ Respuesta IA muy larga/corta ({palabras} palabras), reintentando...")
-                        
+                    if texto:
+                        # Limpieza total
+                        texto = texto.lower().replace('.', '').replace(',', '').strip()
+                        # Filtros de seguridad extra
+                        if "necesito" in texto or "quiero" in texto or "volveré" in texto:
+                            continue 
+                            
+                        if self._validar_y_guardar(texto):
+                            return texto
+
                 except Exception as e:
-                    logging.warning(f"⚠ Fallo IA intento {intento + 1}/{intentos_max}: {e}")
+                    logging.warning(f"⚠ Fallo IA intento {intento + 1}: {e}")
                     time.sleep(0.5)
         
-        # Si llegamos aquí, usar respaldo aleatorio
         self.total_respaldos += 1
-        texto_respaldo = random.choice(self.respaldos_satisfaccion)
-        logging.info(f"📋 [Respaldo] Usando comentario predefinido")
-        return texto_respaldo
+        return random.choice(self.respaldos_satisfaccion)
 
     def generar_comentario_empleado(self, nombre, intentos_max=3):
-        """
-        Genera comentario específico para el empleado con IA
-        Personalizado con el nombre del empleado
-        """
+        """Genera comentario empleado: PASADO, SERVICIO, AYUDA."""
         if self.usar_ia:
             for intento in range(intentos_max):
                 try:
-                    # Múltiples variaciones de prompt
                     prompts = [
-                        f"Cliente de restaurante agradece a {nombre} que lo atendió. 7-10 palabras casual. Sin puntos. Ejemplo: {nombre} muy amable me atendió súper bien",
-                        f"Persona reconoce al mesero {nombre} por buen servicio. 8-11 palabras simple. Sin puntuación. Ejemplo: {nombre} me atendió muy rápido gracias",
-                        f"Comentario sobre {nombre} que atendió la mesa. 7-10 palabras. Sin signos. Ejemplo: {nombre} fue muy atento y amable gracias",
-                        f"Cliente satisfecho con la atención de {nombre}. 8-12 palabras. Sin puntos. Ejemplo: {nombre} me ayudó con el pedido muy bien",
-                        f"Opinión sobre cómo {nombre} atendió. 7-10 palabras casual. Sin puntuación. Ejemplo: {nombre} súper amable todo muy bien",
-                        f"Reconocimiento a {nombre} por su servicio. 8-11 palabras. Sin signos. Ejemplo: gracias {nombre} muy buena atención de tu parte",
-                        f"Cliente habla bien de {nombre} que lo sirvió. 7-10 palabras simple. Sin puntos. Ejemplo: {nombre} excelente servicio muy amable",
-                        f"Comentario positivo sobre la atención de {nombre}. 8-12 palabras. Sin puntuación. Ejemplo: {nombre} me atendió muy bien gracias por todo",
-                        f"Persona agradece a {nombre} del restaurante. 7-9 palabras casual. Sin signos. Ejemplo: {nombre} muy atento muchas gracias",
-                        f"Cliente contento con {nombre} que lo atendió. 8-11 palabras. Sin puntos. Ejemplo: {nombre} fue muy servicial todo bien gracias"
+                        f"Di que {nombre} me atendió rápido. Pasado. Minúsculas. Ejemplo: {nombre} fue muy rapido",
+                        f"Di que {nombre} fue amable conmigo. Breve. Ejemplo: {nombre} me trato muy bien",
+                        f"Menciona que {nombre} me ayudó con la orden. Corto. Ejemplo: gracias {nombre} por la ayuda",
+                        f"Comentario simple: {nombre} es servicial. Ejemplo: {nombre} es muy amable",
+                        f"Di que {nombre} explicó bien. Pasado. Ejemplo: {nombre} me explico el menu",
+                        f"Agradece a {nombre} por el servicio. Informal. Ejemplo: buen servicio de {nombre}",
+                        f"Menciona que {nombre} siempre sonríe. Corto. Ejemplo: {nombre} muy buena gente"
                     ]
                     
                     prompt_seleccionado = random.choice(prompts)
                     
-                    # Llamar a la API Gemini Flash-Lite
                     response = self.client.models.generate_content(
                         model="models/gemini-2.0-flash-lite-001",
                         contents=prompt_seleccionado,
                         config={
-                            "temperature": 1.8,
-                            "top_p": 0.98,
-                            "top_k": 64,
-                            "max_output_tokens": 50,
+                            "temperature": 0.65,
+                            "top_p": 0.90,
+                            "top_k": 40,
+                            "max_output_tokens": 30,
                         }
                     )
                     
-                    # Extraer texto
-                    texto = None
+                    texto = self._extraer_texto(response)
                     
-                    if hasattr(response, 'text') and response.text:
-                        texto = response.text
-                    elif hasattr(response, 'candidates') and response.candidates:
-                        candidate = response.candidates[0]
-                        if hasattr(candidate, 'content') and candidate.content:
-                            content = candidate.content
-                            if hasattr(content, 'parts') and content.parts:
-                                if hasattr(content.parts[0], 'text'):
-                                    texto = content.parts[0].text
-                    
-                    if not texto:
-                        raise Exception(f"Respuesta vacía")
-                    
-                    texto = texto.strip()
-                    
-                    # Limpieza
-                    texto = texto.replace('"', '').replace("'", "").replace('*', '').replace('`', '')
-                    texto = texto.replace('Comentario:', '').replace('Elogio:', '').replace('Agradecimiento:', '')
-                    texto = texto.replace('**', '').replace('__', '')
-                    texto = texto.replace('Ejemplo:', '').replace('ejemplo:', '')
-                    
-                    # REMOVER TODA LA PUNTUACIÓN para que sea más casual
-                    texto = texto.replace('.', '').replace(',', '').replace(';', '').replace(':', '')
-                    texto = texto.replace('!', '').replace('¡', '').replace('?', '').replace('¿', '')
-                    
-                    # Tomar solo la primera línea
-                    if '\n' in texto:
-                        texto = texto.split('\n')[0]
-                    
-                    texto = texto.strip()
-                    
-                    # Verificar que no sea repetido
-                    if texto in self.cache_recientes:
-                        logging.warning(f"⚠ Comentario empleado duplicado, regenerando...")
-                        continue
-                    
-                    # Validar longitud
-                    palabras = len(texto.split())
-                    if 4 <= palabras <= 18:
-                        # Agregar al cache
-                        self.cache_recientes.append(texto)
-                        if len(self.cache_recientes) > 20:
-                            self.cache_recientes.pop(0)
+                    if texto:
+                        texto = texto.lower().replace('.', '').replace(',', '').strip()
                         
-                        self.total_generados_ia += 1
-                        logging.info(f"🤖 [IA] Comentario empleado único generado ({palabras} palabras)")
-                        return texto
-                    else:
-                        logging.warning(f"⚠ Respuesta IA empleado muy larga/corta, reintentando...")
-                        
+                        if "guapa" in texto or "linda" in texto or "guapo" in texto:
+                            continue
+
+                        if self._validar_y_guardar(texto):
+                            return texto
+                            
                 except Exception as e:
-                    logging.warning(f"⚠ Fallo IA empleado intento {intento + 1}/{intentos_max}: {e}")
+                    logging.warning(f"⚠ Fallo IA empleado intento {intento + 1}: {e}")
                     time.sleep(0.5)
         
-        # Respaldo
         self.total_respaldos += 1
-        texto_respaldo = random.choice(self.respaldos_empleado)
-        logging.info(f"📋 [Respaldo] Usando comentario empleado predefinido")
-        return texto_respaldo
+        return random.choice(self.respaldos_empleado)
+
+    def _extraer_texto(self, response):
+        try:
+            if hasattr(response, 'text') and response.text:
+                return response.text
+            elif hasattr(response, 'candidates') and response.candidates:
+                return response.candidates[0].content.parts[0].text
+        except:
+            return None
+        return None
+
+    def _validar_y_guardar(self, texto):
+        texto = texto.replace('"', '').replace("'", "").replace('*', '').replace('example:', '').replace('ejemplo:', '')
+        
+        if texto in self.cache_recientes:
+            return False
+            
+        palabras = len(texto.split())
+        if 2 <= palabras <= 12: # Máximo 12 palabras
+            self.cache_recientes.append(texto)
+            if len(self.cache_recientes) > 20:
+                self.cache_recientes.pop(0)
+            self.total_generados_ia += 1
+            logging.info(f"🤖 [IA] Generado: {texto}")
+            return True
+        return False
     
     def obtener_estadisticas(self):
-        """Devuelve estadísticas de uso de IA"""
         total = self.total_generados_ia + self.total_respaldos
-        if total == 0:
-            return "No se han generado comentarios aún"
-        
-        porcentaje_ia = (self.total_generados_ia / total) * 100
-        return f"IA: {self.total_generados_ia} ({porcentaje_ia:.1f}%) | Respaldos: {self.total_respaldos} | Cache: {len(self.cache_recientes)} únicos"
+        if total == 0: return "Sin actividad"
+        return f"IA: {self.total_generados_ia} ({(self.total_generados_ia/total)*100:.1f}%) | Respaldos: {self.total_respaldos}"
